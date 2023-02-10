@@ -21,7 +21,7 @@
             <div class="menu__left">
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">WORK</a></li>
+                    <li><a href="#work">WORK</a></li>
 
                 </ul>
 
@@ -34,8 +34,8 @@
 
             <div class="menu__right">
                 <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
 
                 </ul>
             </div>
@@ -47,17 +47,17 @@
                     <a href="#" class="menu-mobile__logo">
                         <img src="/img/logo.svg" alt="logo">
                     </a>
-                    <a href="#" class="menu-mobile__burger">
+                    <a href="#" class="menu-mobile__burger" id="openClose-button">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
                     </a>
                 </div>
 
-                <div id="menu-mobile__list" class="menu-mobile__list">
+                <div id="menu-mobile__list" class="menu-mobile-closed">
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#">WORK</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#work">WORK</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
@@ -81,7 +81,7 @@
 
         <!-- WORK -->
 
-        <section class="work container">
+        <section class="work container" id="work">
             <h2 class="work__title">WORK</h2>
             
             <!-- GRID -->
@@ -196,7 +196,7 @@
 
 
         <!-- ABOUT -->
-        <section class="about container">
+        <section class="about container" id="about">
             <div class="about__title">
                 <h2>SKILLS</h2>
                 <p> CREATIVE DIRECTION | STORY DEVELOPMENT</p>                
@@ -219,7 +219,7 @@
         </section>
 
         <!-- CONTACT US -->
-        <section class="contact container">
+        <section class="contact container" id="contact">
             <div class="contact-container">
                 <div class="contact__location">
                     <h3>LOCATION</h3>
@@ -280,16 +280,16 @@
         <div class="nav-bar">
             <div></div>
             <div class="nav-buttons">
-                <a href="#">
+                <a href="#" id="prev-button">
                     <span class="material-icons md-48">
                         arrow_back_ios
                     </span>
                 </a>
-                <a href="#"><span class="material-icons md-48">arrow_forward_ios</span></a>
+                <a href="#" id="next-button"><span class="material-icons md-48">arrow_forward_ios</span></a>
 
             </div>
 
-            <div class="nav__close">
+            <div class="nav__close" id="close-button">
                 <a href="#"><span class="material-icons md-48">close</span></a>
             </div>
         </div>
